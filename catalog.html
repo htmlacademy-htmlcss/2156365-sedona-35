@@ -11,7 +11,7 @@
 
 
 <nav class="navigation">
-<ul class="navigation-list"></ul>
+<ul class="navigation-list">
 <li class="navigation-item">
 <a class="navigation-link" href="index.html">Главная
 </a></li>
@@ -21,10 +21,10 @@
 <li class="navigation-item">
 <a class="navigation-link" href="gostinica.html">Гостиницы
 </a></li>
+</ul>
 
 
-
-<ul class="navigation-list navigation-user"></ul>
+<ul class="navigation-list navigation-user">
 <li class="navigation-item">
 <a class="navigation-link" href="#"><span class="visually-hidden">поиск</span>
 </a></li>
@@ -34,6 +34,7 @@
 <li class="navigation-item">
 <a class="navigation-link" href="#">Хочу сюда!
 </a></li>
+</ul>
 </nav>
 </header>
 <main class="main-iner">
@@ -46,23 +47,23 @@
 <li class="breadcrums-item"><a class="breadcrums-link">Гостиницы</a></li>
 </ul>
   </header>
-  <section class="catalog-product">
+  <section class="filter-list-product">
     <h2 class="visually-hidden">фильтр с гостиницами</h2>
-<form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-  <fieldset class="catalog-filter-group">
-    <legend class="catalog-filter-title">Инфраструктура:</legend>
-    <ul class="catalog-list">
-      <li class="catalog-item">
+<form class="filter-list" action="https://echo.htmlacademy.ru/" method="get">
+  <fieldset class="filter-list-group">
+    <legend class="filter-list-title">Инфраструктура:</legend>
+    <ul class="filter-list">
+      <li class="filter-list-item">
     <label class="control">
       <input class="control-input" type="checkbox" name="Bassein" checked>Бассейн
     </label>
       </li>
-      <li class="catalog-item">
+      <li class="filter-list-item">
         <label class="control">
           <input class="control-input" type="checkbox" name="parking" checked>Парковка
         </label>
           </li>
-          <li class="catalog-item">
+          <li class="filter-list-item">
             <label class="control">
               <input class="control-input" type="checkbox" name="WI-fi">WI-FI
             </label>
@@ -71,20 +72,20 @@
 
     </ul>
   </fieldset>
-  <fieldset class="catalog-filter-group">
-<legend class="catalog-filter-title">Тип жилья:</legend>
-<ul class="catalog-list">
-  <li class="catalog-item">
+  <fieldset class="filter-list-group">
+<legend class="filter-list-title">Тип жилья:</legend>
+<ul class="filter-list">
+  <li class="filter-list-item">
 <label class="control">
   <input class="control-input" type="radio" name="gost" checked>Гостиница
 </label>
   </li>
-  <li class="catalog-item">
+  <li class="filter-list-item">
     <label class="control">
       <input class="control-input" type="checkbox" name="hotel">Мотель
     </label>
       </li>
-      <li class="catalog-item">
+      <li class="filter-list-item">
         <label class="control">
           <input class="control-input" type="checkbox" name="apartamenti">Апартаменты
         </label>
@@ -104,15 +105,15 @@
   <select class="select-control" aria-label="Сортировка">
     <option value="cheap">сначала дешёвые</option>
   </select>
-  <a class="button-card" href="#">
-    <span class="visually-hidden">Показать карточки</span>
-  </a>
-  <a href="#" class="button-kakoyto"><!--не понимаю что это за карточка в фигме -->
-    <span class="visually-hidden">что это </span>
-  </a>
-  <a href="#" class="button-spisok">
+ <button class="button-card" type="submit">
+ <span class="visually-hidden">Показать карточки</span>
+ </button>
+ <button class="button-default" type="submit">
+    <span class="visually-hidden">по умолчанию</span>
+ </button>
+  <button class="button-list" type="submit">
     <span class="visually-hidden">Показать список</span>
-  </a>
+  </button>
   <ul class="product-card">
     <li class="product-card-item">
     <a class="product-card-link" href="#">
@@ -123,9 +124,9 @@
     <b class="product-card-price">от 4000 ₽</b>
     <a class="product-card-button button" href="#">подробнее</a>
     <a class="product-save-button button" href="#">избранное</a>
-    <span class="reiting"> Рейтинг: 8,5</span>
+    <span class="all-star">★★★★</span>
+    <span class="rating"> Рейтинг: 8,5</span>
     </li>
-    <!--как звезды делать ?-->
     <li class="product-card-item">
       <a class="product-card-link" href="#">
         <img class="product-card-image" src="#" alt="Villas at Poco Diablo">
@@ -135,7 +136,8 @@
       <b class="product-card-price">от 5000 ₽</b>
       <a class="product-card-button button" href="#">подробнее</a>
       <a class="product-save-button button" href="#">избранное</a>
-      <span class="reiting"> Рейтинг: 9,2</span>
+      <span class="all-star">★★★★</span>
+      <span class="rating"> Рейтинг: 9,2</span>
       </li>
       <li class="product-card-item">
         <a class="product-card-link" href="#">
@@ -146,7 +148,8 @@
         <b class="product-card-price">от 2500 ₽</b>
         <a class="product-card-button button" href="#">подробнее</a>
         <a class="product-save-button button" href="#">избранное</a>
-        <span class="reiting"> Рейтинг: 6,9</span>
+        <span class="all-star">★★★</span>
+        <span class="rating"> Рейтинг: 6,9</span>
         </li>
         <li class="product-card-item">
           <a class="product-card-link" href="#">
@@ -157,13 +160,11 @@
           <b class="product-card-price">от 1500 ₽</b>
           <a class="product-card-button button" href="#">подробнее</a>
           <a class="product-save-button button" href="#">избранное</a>
-          <span class="reiting"> Рейтинг: 5,0</span>
+          <span class="all-star">★★</span>
+          <span class="rating"> Рейтинг: 5,0</span>
           </li>
         </ul>
 <ul class="pagination">
-
-
-</li>
 <li class="pagination-item">
   <a class="pagination-link pagination-current">1</a>
 </li>
