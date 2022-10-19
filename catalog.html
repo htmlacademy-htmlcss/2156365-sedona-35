@@ -2,14 +2,13 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" href="styles/styles.css">
 <title>Каталог Седона </title>
 </head>
 <body>
 <header class="page-header">
 <h1 class="visually-hidden">Гостиницы Седона</h1>
-<a class="logo" href="index.html"><img class="logo" src="images/logoheader.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
-<!--почему то лого не грузит в браузере-->
-
+<a class="logo" href="index.html"><img class="logo" src="images/logo-header.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
 <nav class="navigation">
 <ul class="navigation-list">
 <li class="navigation-item">
@@ -101,7 +100,7 @@
   </section>
 <section class="hotel-open">
   <h2 class="visually-hidden">список гостиниц</h2>
-  <span>найдено гостиниц:38</span>
+  <span class="found-hotel">найдено гостиниц:38</span>
   <select class="select-control" aria-label="Сортировка">
     <option value="cheap">сначала дешёвые</option>
   </select>
@@ -191,9 +190,9 @@
 
 
 
-<section class="subscribe">
-<h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-<p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+<section class="catalog-subscribe">
+<h3 class="catalog-subscribe-title">Подпишитесь на рассылку</h3>
+<p class="catalog-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
 <input type="text" name="email" placeholder="Ваш e-mail">
 <a class="button button-all" href="#">подписаться</a>
 </section>
