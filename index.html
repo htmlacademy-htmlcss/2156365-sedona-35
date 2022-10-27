@@ -6,11 +6,10 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-<header class="page-header">
-  <h1 class="visually-hidden">Гостиницы Седона</h1>
+<div class="container">
+ <header class="page-header">
+  <h1 class="visually-hidden" hidden>Гостиницы Седона</h1>
   <a class="logo" href="index.html"><img class="logo" src="images/logo-header.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
-
-
   <nav class="navigation">
 <ul class="navigation-list">
 <li class="navigation-item">
@@ -33,7 +32,8 @@
   </nav>
 </header>
 
-<main class="main-index">
+<main class="main-container main-index">
+  <div class="page-container">
   <section class="header-index">
 <img class="welcome" src="images/welcome.svg" width="458" height="352" alt="втречающая картинка на сайте Седона welcome"></style>
 
@@ -43,10 +43,12 @@
   <section class="advantages">
 <h2 class="visually-hidden">преимущества</h2>
 <ul class="advantages-list">
+  <div class="container-item">
 <li class="advantages-item1">
 <h3 class="advantages-header-title">настоящий<br> городок</h3>
-<p class="advantages-header-description">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
-<img class="img1" src="images/photo-1.jpg" width="800" height="384" alt="Седона небольшой городок в Аризоне"></li>
+<p class="advantages-header-description">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p></li>
+<li><img class="img1" src="images/photo-1.jpg" width="800" height="384" alt="Седона небольшой городок в Аризоне"></li>
+
 <li class="advantages-item2">
 <h3 class="advantages-title">Небольшая<br>площадь</h3>
 <p class="advantages-description">Все достопримечательности<br>находятся очень близко</p>
@@ -59,15 +61,17 @@
   <h3 class="advantages-title">Мало<br>туристов</h3>
   <p class="advantages-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
 </li>
+<li><img class="img2" src="images/photo-2.jpg" width="800" height="384" alt="Мост дявола в Аризоне"></li>
 <li class="advantages-item5">
 <h3 class="advantages-header-title">Там есть<br>мост дьявола</h3>
-<p class="advantages-header-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br>разумеется</p>
-<img class="img2" src="images/photo-2.jpg" width="800" height="384" alt="Мост дявола в Аризоне">
-</li>
+<p class="advantages-header-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br>разумеется</p></li>
+
+
+  </div>
 </ul>
 </section>
 <section class="service">
-  <ul class="service-list">
+  <ul class="service-list container-item">
     <li class="service-item1">
       <img class="img-home" src="images/home-Advantage-icon.svg" width="75" height="72" alt="лого с домиком">
       <h3 class="service-title">жилье</h3>
@@ -82,6 +86,7 @@
         <h3 class="service-title">Сувениры</h3>
       <p class="service-description">Не только китайского,<br>но и настоящего местного<br> производства!</p></li>
     </ul>
+
 </section>
 <section class="search">
   <h2 class="visually-hidden">Поиск гостиницы</h2>
@@ -97,27 +102,32 @@
 </section>
 
 
+  </div>
 
 </main>
+
 <footer class="index-footer">
+  <div class="page-footer-container">
   <nav class=" social-networks">
-    <ul class=" social-networks-list">
-      <li class=" social-networks-item">
-      <a class="navigation-link-footer" href="https://vk.com/htmlacademy">
-      <span class="visually-hidden">vk</span></a></li>
-      <li class=" social-networks-item">
-        <a class="navigation-link-footer" href="https://t.me/htmlacademy">
-        <span class="visually-hidden">tg</span></a></li>
-        <li class=" social-networks-item">
-          <a class="navigation-link-footer" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">youtube</span></a></li>
+  <ul class=" social-networks-list">
+  <li class=" social-networks-item">
+  <a class="navigation-link-footer" href="https://vk.com/htmlacademy">
+  <span class="visually-hidden">vk</span></a></li>
+  <li class=" social-networks-item">
+  <a class="navigation-link-footer" href="https://t.me/htmlacademy">
+  <span class="visually-hidden">tg</span></a></li>
+  <li class=" social-networks-item">
+  <a class="navigation-link-footer" href="https://www.youtube.com/user/htmlacademyru">
+  <span class="visually-hidden">youtube</span></a></li>
 </ul>
+</nav>
 <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 <a class="navigation-link-logo" href="https://htmlacademy.ru"><img class="logo-footer" src="images/Logo-footer-index.svg" width="114.9" height="32.9" alt="логотип сайта htmlacademyru"></a>
-  </nav>
 
+</div>
 
 </footer>
+</div>
 
   </body>
 </html>
