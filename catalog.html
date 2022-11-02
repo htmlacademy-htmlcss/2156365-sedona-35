@@ -6,33 +6,31 @@
 <title>Каталог Седона </title>
 </head>
 <body>
-  <div class="container">
-    <header class="page-header">
-      <h1 class="visually-hidden" hidden>Гостиницы Седона</h1>
-      <a class="logo" href="index.html"><img class="logo" src="images/logo-header.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
-
-
-      <nav class="navigation">
-    <ul class="navigation-list">
-    <li class="navigation-item">
-      <a class="navigation-link" href="index.html">Главная
-      </a></li>
-    <li class="navigation-item">
-      <a class="navigation-link" href="sedona.html">О Cедоне
-      </a></li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="catalog.html">Гостиницы
-     </a></li>
-    </ul>
-      <ul class="navigation-list navigation-user">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#"><span class="visually-hidden">поиск</span>
-        </a></li>
-      <li class="navigation-item"><a class="navigation-link" href="#"><span class="visually-hidden">избранное</span></a></li>
-        <li class="navigation-item"><a class="navigation-link button" href="#">Хочу сюда!</a></li>
-      </ul>
-      </nav>
-    </header>
+<div class="container">
+<header class="page-header">
+<h1 class="visually-hidden" hidden>Гостиницы Седона</h1>
+<nav class="navigation">
+<a class="logo" href="index.html"><img class="logo" src="images/logo-header.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
+<ul class="navigation-list">
+<li class="navigation-item">
+<a class="navigation-link" href="index.html">Главная
+</a></li>
+<li class="navigation-item">
+<a class="navigation-link" href="sedona.html">О Cедоне
+</a></li>
+<li class="navigation-item">
+<a class="navigation-link" href="catalog.html">Гостиницы
+</a></li>
+</ul>
+<ul class="navigation-list navigation-user">
+<li class="navigation-item">
+<a class="navigation-link" href="#"><span class="visually-hidden">поиск</span>
+</a></li>
+<li class="navigation-item"><a class="navigation-link" href="#"><span class="visually-hidden">избранное</span></a></li>
+<li class="navigation-item"><a class="navigation-link button" href="#">Хочу сюда!</a></li>
+</ul>
+</nav>
+</header>
 <main class="main-container main-iner">
   <div class="page-container">
   <header class="iner-header">
@@ -43,8 +41,7 @@
 </li>
 <li class="breadcrums-item"><a class="breadcrums-link">Гостиницы</a></li>
 </ul>
-  </header>
-
+</header>
 <section class="filter-list-product">
 <h2 class="visually-hidden" hidden >фильтр с гостиницами</h2>
 <form class="filter-list" action="https://echo.htmlacademy.ru/" method="get">
@@ -93,21 +90,22 @@
 </form>
 </section>
 <section class="hotel-open">
-
+<div class="search-hotel">
 <h2 class="visually-hidden">список гостиниц</h2>
 <span class="found-hotel">найдено гостиниц:38</span>
 <select class="select-control" aria-label="Сортировка">
 <option value="cheap">сначала дешёвые</option>
 </select>
-<button class="button-card" type="submit">
+<button class="button button-card" type="submit">
 <span class="visually-hidden">Показать карточки</span>
 </button>
-<button class="button-default" type="submit">
+<button class="button button-default" type="submit">
 <span class="visually-hidden">по умолчанию</span>
 </button>
-<button class="button-list" type="submit">
+<button class="button button-list" type="submit">
 <span class="visually-hidden">Показать список</span>
 </button>
+</div>
 <div class="catalog-right-column">
 <ul class="product-card">
 <li class="product-card-item">
@@ -180,24 +178,15 @@
 <a class="pagination-link" href="#">10</a>
 </li>
 </ul>
-
 </section>
-
-
-
-
-
 <section class="catalog-subscribe">
 <h3 class="catalog-subscribe-title">Подпишитесь на рассылку</h3>
-<p class="catalog-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-<input type="text" name="email" placeholder="Ваш e-mail">
+<p class="catalog-subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+  <input type="text" name="email" placeholder="Ваш e-mail">
 <a class="button button-all" href="#">подписаться</a>
 </section>
-
 </div>
-
 </main>
-
 <footer class="index-footer">
 <div class="page-footer-container">
   <nav class=" social-networks">
