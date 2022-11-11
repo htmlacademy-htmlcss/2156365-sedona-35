@@ -86,7 +86,7 @@ color:#000000;
 text-align:center;
 padding:20px 16px;
 display: block;
-flex-wrap: wrap;
+/*flex-wrap: wrap;*/
 }
 .main-index{
 text-align:center;
@@ -106,7 +106,6 @@ text-transform:uppercase;
 color:#000000;
 margin-bottom: 25px;
 margin-top: 0;
-display: block;
 }
 .header-description{
 font-weight:400;
@@ -133,6 +132,11 @@ background-repeat:no-repeat;
 width: 400px;
 height: 384px;
 }
+
+.advantages-img{
+  height: 384px;
+}
+
 .advantages-header-title{
 font-weight:700;
 font-size:24px;
@@ -308,7 +312,7 @@ align-items: center;
 .social-networks-item{
  min-height: 40px;
  min-width: 48px;
-display: block;
+
 }
 .navigation-link-logo{
   margin-right: 71px;
@@ -323,8 +327,8 @@ background-repeat:no-repeat;
 background-size:100% auto;
 }
 .catalog-right-column{
-display: flex;
 width: 1060px;
+margin: 0 auto;
 }
 .iner-header-title{
 font-weight:700;
@@ -366,18 +370,40 @@ text-transform:uppercase;
 font-weight:400;
 font-size:18px;
 line-height:21px;
+padding: 20px;
+display: grid;
+grid-template-columns: auto auto;
+column-gap: 20px;
+row-gap: 16px;
 }
+.product-card-price{
+  justify-self: end;
+
+}
+.product-card-link{
+  grid-column: 1/-1;
+}
+.product-card-title{
+  margin: 0;
+}
+.product-card-image{
+  margin-bottom: 16px;
+}
+
 .product-card-title {
 font-weight:700;
 font-size:24px;
 line-height:28px;
 color:#000000;
-text-transform:uppercase;
 }
 .product-card{
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 .all-star{
 color:#83B3D3;
@@ -385,7 +411,7 @@ color:#83B3D3;
 .rating{
 font-weight:400;
 font-size:16px;
-line-height:20px;
+justify-self: center;
 }
 .button{
 font-weight:700;
@@ -394,6 +420,13 @@ line-height:20px;
 text-decoration:none;
 text-transform:uppercase;
 }
+.product-card-button{
+  justify-self: center;
+}
+.product-save-button{
+justify-self: center;
+
+}
 .button-all{
 font-size:20px;
 line-height:36px;
@@ -401,7 +434,7 @@ line-height:36px;
 .pagination{
 display: flex;
 list-style-type: none;
-margin:40px 730px 60px 70px;
+margin:80px 730px 60px 70px;
 padding: 0;
 width: 400px;
 height: 60px;
